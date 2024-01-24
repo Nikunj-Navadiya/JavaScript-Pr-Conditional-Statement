@@ -1,0 +1,21 @@
+<!-- Write a JavaScript program to create basic calculator using ledder if else -->
+
+<script type="text/javascript">
+
+    var a = parseInt(prompt("Enter no A :- "));
+    var b = parseInt(prompt("Enter no B :- "));
+    var choise = prompt("Enter  +    ,   -   ,   *    ,   /");
+
+    if(choise == '+'){
+        document.write(`<h1>Sum =  ${a+b}</h1>`);
+    }else if(choise == '-'){
+        document.write(`<h1>Min =  ${a-b}</h1>`);
+    }else if(choise == '*'){
+        document.write(`<h1>Mul =  ${a*b}</h1>`);
+    }else if(choise == '/'){
+        document.write(`<h1>Div =  ${a/b}</h1>`);
+    }else{
+        document.write(`<h1>Invalid sign</h1>`);
+    }
+
+</script>

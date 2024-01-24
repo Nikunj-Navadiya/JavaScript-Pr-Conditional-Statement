@@ -1,0 +1,31 @@
+<!-- .Write a Javascript program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. Calculate percentage and grade according to following -->
+
+<script type="text/JavaScript">
+
+var phy = parseInt(prompt('Enter Physics Marks :- '));
+var che = parseInt(prompt('Enter Chemistry Marks :- '));
+var bio = parseInt(prompt('Enter Biology Marks :- '));
+var mat = parseInt(prompt('Enter Mathematics Marks :- '));
+var com = parseInt(prompt('Enter Computer Marks :- '));
+
+ans = (phy + che + bio + mat + com) / 5
+
+document.write(`<h1>Percentage = ${ans}</h1>`);
+
+if(ans >= 90){
+    document.write(`<h1>Grade A</h1>`);
+}else if(ans >= 80){
+    document.write(`<h1>Grade B</h1>`);
+}else if(ans >= 70){
+    document.write(`<h1>Grade C</h1>`);
+}else if(ans >= 60){
+    document.write(`<h1>Grade D</h1>`);
+}else if(ans >= 50){
+    document.write(`<h1>Grade E</h1>`);
+}else if(ans >= 40){
+    document.write(`<h1>Grade F</h1>`);
+}else{
+    document.write(`<h1>Grade G</h1>`);
+}
+
+</script>
